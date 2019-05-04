@@ -1,20 +1,20 @@
-require 'sequel'
-Sequel::Model.plugin(:schema)
+require "sequel"
 
-Sequel.connect("sqlite://comments.db")
+db = Sequel.connect("sqlite://comments.db")
+
+unless db.table_exists?(:comments)
+  db.create_table(:comments) do
+    primary_key :id
+    string :name
+    string :title
+    text :message
+    timestamp :posted_date
+  end
+end
+
+Sequel::Model.db = db
 
 class Comments < Sequel::Model
-  unless table_exists?
-    set_schema do
-      primary_key :id
-      string :name
-      string :title
-      text :message
-      timestamp :posted_date
-    end
-    create_table
-  end
-
   def date
     self.posted_date.strftime("%Y-%m-%d %H:%M:%S")
   end

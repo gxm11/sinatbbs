@@ -19,3 +19,7 @@ Sinatraで作った掲示板アプリケーションです。
     $ ruby start.rb
 
 http://localhost:4567/
+
+# use for repl.it
+
+https://repl.it/languages
