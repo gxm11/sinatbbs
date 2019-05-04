@@ -6,20 +6,17 @@ Sinatraで作った掲示板アプリケーションです。
 
 ![](screenshot.png)
 
-## 依存ライブラリ
+# Used for repl.it
+
+1. visit https://repl.it/languages
+2. select language: **ruby**
+3. click run
+
+## Gemfiles
 
 * Sinatra
 * Haml
 * Sequel
-* sqlite3
-
-## 起動方法
-
-    $ bundle install
-    $ ruby start.rb
-
-http://localhost:4567/
-
-# use for repl.it
-
-https://repl.it/languages
+* sqlite3-static
+* sass
+* thin
