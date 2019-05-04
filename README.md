@@ -18,5 +18,4 @@ Sinatraで作った掲示板アプリケーションです。
 * Haml
 * Sequel
 * sqlite3-static
-* sass
 * thin
