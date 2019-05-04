@@ -6,17 +6,17 @@
       %td 
         %input{:type => "text", :name => "name"}
     %tr
-      %td Title
+      %td Topic
       %td
         %input{:type => "text", :name => "title"}
     %tr
-      %td Contents
+      %td Content
       %td
         %textarea{:name => "message", :cols => 60, :rows => 8}
     %tr
       %td
       %td
-        %input{:type => "submit"}
+        %input{:value => "submit", :type => "submit"}
 
 - @comments.each do |comment|
   .comment

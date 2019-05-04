@@ -3,7 +3,6 @@ GEM
   specs:
     daemons (1.3.1)
     eventmachine (1.2.7)
-    ffi (1.10.0)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -11,14 +10,6 @@ GEM
     rack (2.0.7)
     rack-protection (2.0.5)
       rack
-    rb-fsevent (0.10.3)
-    rb-inotify (0.10.0)
-      ffi (~> 1.0)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
     sequel (5.20.0)
     sinatra (2.0.5)
       mustermann (~> 1.0)
@@ -38,7 +29,6 @@ PLATFORMS
 
 DEPENDENCIES
   haml
-  sass
   sequel
   sinatra
   sqlite3-static
